@@ -1,0 +1,178 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: #FAF8E1;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+.table-cutout-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10vw solid #1B74FF;
+  border-left: 20vw solid transparent;
+}
+
+.table-cutout-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 20vw solid #1B74FF;
+  border-right: 10vw solid transparent;
+}
+
+.squash {
+  position: absolute;
+  width: 20vw;
+  height: 13vw;
+  background-image: radial-gradient(circle at right, #F97A14 , #FEE542);
+  border-radius: 90% 50% 50% 50% / 60% 60% 90% 90%;
+  bottom: 12vw;
+  left: 25vw;
+  z-index: 1;
+}
+
+.squash-stem {
+  position: absolute;
+  width: 3vw;
+  height: 2vw;
+  background-image: linear-gradient(to right, #322D06 , #5D5723);
+  top: 5vw;
+  right: -0.6vw;
+  border-radius: 90% 50% 50% 50% / 60% 60% 40% 90%;
+  background-color: #4F470F;
+  z-index: 2;
+}
+
+.red-vegetable {
+  position: absolute;
+  width: 26vw;
+  height: 26vw;
+  transform: rotate(-10deg);
+  background-color: #D21313;
+  bottom: 6vw;
+  left: 55vw;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 1;
+}
+
+.red-upper-mound {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  background-color: #D21313;
+  top: -1vw;
+  right: 8vw;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 2;
+}
+
+.shadow {
+  position: absolute;
+  width: 35vw;
+  height: 20vw;
+  background-color: black;
+  opacity: 30%;
+  bottom: -7vw;
+  right: 22vw;
+  filter: blur(0.5vw);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.red-stem {
+  position: absolute;
+  width: 3vw;
+  height: 2vw;
+  background-color: #46330D;
+  top: 1vw;
+  right: 3vw;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 3;
+}
+
+.vase {
+  position: absolute;
+  width: 17vw;
+  height: 36vw;
+  background-color: white;
+  opacity: 0.8;
+  transform: skew(4deg);
+  top: 0;
+  left: 36vw;
+  border-radius: 0 0 4vw 4vw.;
+  z-index: 0;
+}
+
+.base {
+  position: absolute;
+  height:6vw;
+  width:17vw;
+  border-radius: 9vw 9vw 0 0;
+  background-color: white;
+  opacity: 0.8;
+  bottom: -5vw;
+}
+
+.stem-1 {
+  position: absolute;
+  width: 1vw;
+  height: 34vw;
+  background: green;
+  transform: rotate(10deg);
+  left: 10vw;
+  bottom: 0;
+}
+
+.stem-2 {
+  position: absolute;
+  width: 1vw;
+  height: 34vw;
+  background: green;
+  transform: rotate(10deg);
+  left: 7vw;
+  bottom: 0.4vw;
+}
+
+.stem-3 {
+  position: absolute;
+  width: 1vw;
+  height: 34vw;
+  background: green;
+  transform: rotate(-10deg);
+  left: 10vw;
+  bottom: 0;
+}
+
+.stem-4 {
+  position: absolute;
+  width: 1vw;
+  height: 34vw;
+  background: green;
+  transform: rotate(-5deg);
+  left: 4vw;
+  bottom: 0;
+}
+
+
+ 
